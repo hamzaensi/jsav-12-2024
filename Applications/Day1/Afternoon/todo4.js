@@ -25,7 +25,8 @@ Que se passe-t-il si on remplace var par let pour la variable c ?
 /* 
 Exercice 2 : Propriétés privées
 Complétez cette classe pour que secret soit une propriété privée 
-et que l'utilisateur puisse y accéder uniquement via une méthode getSecret.
+et que l'utilisateur puisse y accéder uniquement 
+via une méthode getSecret.
 */
 
 class SecretKeeper {

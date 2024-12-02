@@ -18,14 +18,7 @@ console.log(Animal.prototype.__proto__ === Object.prototype); // ?
 console.log(Object.prototype.__proto__); // ?
 
 
-/* 
-Solution :
 
-dog.__proto__ === Animal.prototype : true.
-Animal.prototype.__proto__ === Object.prototype : true.
-Object.prototype.__proto__ : null.
-
-*/
 
 
 /*
@@ -39,13 +32,6 @@ console.log(obj.b); // ?
 console.log(obj.c); // ?
 
 
-/*
-Solution :
-
-obj.a : 1 (propriété directe).
-obj.b : 2 (trouvée dans le prototype).
-obj.c : undefined (pas trouvé dans la chaîne).
-*/
 
 /*
 Exercice 3 : Créer des objets avec Object.create
@@ -58,5 +44,4 @@ const vehiclePrototype = {
     },
 };
 
-const car = Object.create(vehiclePrototype);
-car.start(); // Vehicle is starting...
+
