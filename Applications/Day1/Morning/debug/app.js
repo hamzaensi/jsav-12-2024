@@ -3,34 +3,35 @@
  */
 
 
-/* // Affichage d'une alerte
+// Affichage d'une alerte
 
-(alert('Hello)) */
-
+/* (alert('Hello'))
+ */
 
 
 /**
  * Exercice 2 : use debugger , breakpoint
  */
 
-/* //  Calculatrice simple
-function add(a, b) {
+//  Calculatrice simple
+/* function add(a, b) {
 
     return a + b; // Erreur intentionnelle
 }
 console.log(add(5, 3)); // Devrait afficher 8
-
  */
+
 
 /**
  * Exercice 3 : use console
  */
 
 
-/* // Manipulation DOM
+// Manipulation DOM
 
-
-document.getElementById('missingId').innerText = 'Hello World';
+/* debugger;
+const h1 = document.getElementById('missingId');
+h1.innerText = 'Hello World';
  */
 
 
@@ -41,9 +42,9 @@ document.getElementById('missingId').innerText = 'Hello World';
 
 
 
-/* // Gestion des événements
+// Gestion des événements
 
-var btn = document.querySelector('#myButton');
+/* var btn = document.querySelector('#myButton');
 btn.onclick = function () { // Erreur: onClick (au lieu de onclick)
     alert('Clicked!');
 }; */
@@ -53,25 +54,25 @@ btn.onclick = function () { // Erreur: onClick (au lieu de onclick)
  * Exercice 5 : use Console + Network
  */
 
-/* // Appel API
+// Appel API
 // use console et network : cors problem
-fetch('http://localhost:3000/api/v2/tasks')
+/* fetch('http://localhost:3000/api/v2/tasks')
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error('Error:', error));
- */
 
+ */
 
 /**
  * Exercice 6 : use Console
  */
 
-/* // Timer avec setTimeout
-
+// Timer avec setTimeout
+/* 
 setTimeout(() => console.log('Hello!'), '3000'); // Erreur: '3000' est une chaîne
 
- */
 
+ */
 
 /**
  * Exercice 7 : use Console
@@ -80,15 +81,15 @@ setTimeout(() => console.log('Hello!'), '3000'); // Erreur: '3000' est une chaî
 //To-Do List dynamique
 // Objectif : Identifier pourquoi une tâche ajoutée n’apparaît pas dans la liste.
 
-/* function addTask(task) {
-
+function addTask(task) {
+    debugger;
     let ul = document.getElementById('taskList');
     let li = document.createElement('li');
     li.innerHTML = task;
     console.log(li)
-    ul.innerHTML(li); // Erreur: innerHtml au lieu de appendChild
+    ul.appendChild(li); // Erreur: innerHtml au lieu de appendChild
     console.log(ul)
-} */
+}
 
 /**
  * Exercice 8 : use Console
@@ -101,18 +102,18 @@ setTimeout(() => console.log('Hello!'), '3000'); // Erreur: '3000' est une chaî
 //Description : Une classe enfant doit hériter d’une méthode de la classe parent,
 // mais l’héritage ne fonctionne pas.
 
-/* class Animal {
+class Animal {
     speak() {
         console.log('Animal speaks');
     }
 }
 class Dog extends Animal {
     speak() {
-        super.speaks(); // Erreur: méthode incorrecte
+        super.speak(); // Erreur: méthode incorrecte
     }
 }
 const dog = new Dog();
-dog.speak(); */
+dog.speak();
 
 
 // on revient ici à la fin de Day 3

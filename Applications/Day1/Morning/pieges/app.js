@@ -48,13 +48,13 @@ if ([]) console.log("Empty array is truthy"); // S'exécute
 
 //Hoisting des variables déclarées avec var
 
-console.log(x); // ?
+console.log(x); // undefin
 var x = 5;
-console.log(x); // ?
+console.log(x); // 5
 
 // Hoisting des fonctions
 
-greet();
+greet(); // Bonjour !
 function greet() {
     console.log("Bonjour !");
 }
@@ -62,8 +62,10 @@ function greet() {
 
 //let et const : la "zone temporaire morte"
 
-console.log(y); // ?
+console.log(y); //
+
 let y = 10;
+const z = 10;
 
 
 
@@ -120,8 +122,8 @@ const obj = {
 console.log(obj.getName()); // Alice
 
 // Contexte global (ou strict mode)
-
-console.log(this); // ? Navigateur , nodeJS
+nodeJS
+console.log(this); // ? Navigateur , 
 
 
 
